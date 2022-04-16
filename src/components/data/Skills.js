@@ -19,6 +19,14 @@ export const SkillsData = [
             {
                 name: "ReactJS",
                 icon: <i class="devicon-react-original colored"></i>,
+            },
+            {
+                name: "SASS",
+                icon: <i class="devicon-sass-original colored"></i>,
+            },
+            {
+                name: "Bootstrap",
+                icon: <i class="devicon-bootstrap-plain colored"></i>,
             }
         ]
     },

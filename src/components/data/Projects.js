@@ -2,41 +2,41 @@ export const ProjectsData = [
     {
         id: 1,
         title: 'Travel Project',
-        about: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.',
+        about: 'This a Travel Website.',
         demo: 'https://bikerslife.netlify.app/',
-        github: 'https://github.com/drishyap',
+        github: 'https://github.com/drishyap/bikers-life',
         image: require('../../assets/projects/travel.png')
     },
     {
         id: 2,
         title: 'Mock Portfolio Project',
-        about: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.',
+        about: 'This a sample portfolio project.',
         demo: 'https://samplemockportfolio.netlify.app/',
-        github: 'https://github.com/drishyap',
+        github: 'https://github.com/drishyap/portfolio',
         image: require('../../assets/projects/port.png')
     },
     {
         id: 3,
         title: 'Reviews Project',
-        about: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.',
+        about: 'This is a project where people give reviews.',
         demo: 'https://peoplesreviews.netlify.app/',
-        github: 'https://github.com/drishyap',
+        github: 'https://github.com/drishyap/reviews',
         image: require('../../assets/projects/review.png')
     },
     {
         id: 4,
         title: 'Menu Items Project',
-        about: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.',
+        about: 'In this project users can choose different menus.',
         demo: 'https://menuitemsss.netlify.app/',
-        github: 'https://github.com/drishyap',
+        github: 'https://github.com/drishyap/menu-intro',
         image: require('../../assets/projects/menu.png')
     },
     {
         id: 5,
         title: 'Tour Project',
-        about: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.',
+        about: 'In this site users can look and read about different touring places.',
         demo: 'https://ourtour.netlify.app/',
-        github: 'https://github.com/drishyap',
+        github: 'https://github.com/drishyap/tours',
         image: require('../../assets/projects/tour.png')
     }
 ]
