@@ -1,22 +1,38 @@
 export const ProjectsData = [
     {
         id: 1,
+        title: 'Weather Application',
+        about: 'This is a weather application for information about weather of any place.',
+        demo: 'https://weatherapplicaton.netlify.app/',
+        github: 'https://github.com/drishyap/weather_application',
+        image: require('../../assets/projects/weather2.png')
+    },
+    {
+        id: 2,
+        title: 'React Router Project',
+        about: 'This is a web application created with react router.',
+        demo: 'https://reactrouterwebapp.netlify.app/',
+        github: 'https://github.com/drishyap/react_router_application',
+        image: require('../../assets/projects/router2.png')
+    },
+    {
+        id: 3,
         title: 'Travel Project',
-        about: 'This a Travel Website.',
+        about: 'This is a Travel Website.',
         demo: 'https://bikerslife.netlify.app/',
         github: 'https://github.com/drishyap/bikers-life',
         image: require('../../assets/projects/travel.png')
     },
     {
-        id: 2,
+        id: 4,
         title: 'Mock Portfolio Project',
-        about: 'This a sample portfolio project.',
+        about: 'This is a sample portfolio project.',
         demo: 'https://samplemockportfolio.netlify.app/',
         github: 'https://github.com/drishyap/portfolio',
         image: require('../../assets/projects/port.png')
     },
     {
-        id: 3,
+        id: 5,
         title: 'Reviews Project',
         about: 'This is a project where people give reviews.',
         demo: 'https://peoplesreviews.netlify.app/',
@@ -24,17 +40,17 @@ export const ProjectsData = [
         image: require('../../assets/projects/review.png')
     },
     {
-        id: 4,
+        id: 6,
         title: 'Menu Items Project',
-        about: 'In this project users can choose different menus.',
+        about: 'In this web application users can choose different menus.',
         demo: 'https://menuitemsss.netlify.app/',
         github: 'https://github.com/drishyap/menu-intro',
         image: require('../../assets/projects/menu.png')
     },
     {
-        id: 5,
+        id: 7,
         title: 'Tour Project',
-        about: 'In this site users can look and read about different touring places.',
+        about: 'In this web application users can look and read about different touring places.',
         demo: 'https://ourtour.netlify.app/',
         github: 'https://github.com/drishyap/tours',
         image: require('../../assets/projects/tour.png')

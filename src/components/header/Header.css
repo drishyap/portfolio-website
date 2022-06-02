@@ -1,42 +1,41 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     flex: 1;
-    padding: 12px;
+    padding: 12px 12px;
     position: relative;
     align-items: center;
-}
-
-.menu{
+  }
+  .menu {
     display: flex;
     flex: 1;
     justify-content: flex-end;
-}
-
-.menu-icon{
+  }
+  .menu-icon {
     font-size: 24px;
     cursor: pointer;
-}
-
-.mobile-menu{
+  }
+  .mobile-menu {
     display: none;
-}
-
-.logo{
+  }
+  .web-menu {
     display: flex;
+  }
+  .logo {
+    display: flex;
+  
     font-size: 36px;
     color: rgb(38, 255, 183);
     font-weight: 800;
-}
-
-@media only screen and (max-width: 720px){
-    .mobile-menu{
-        display: flex;
+  }
+  @media only screen and (max-width: 720px) {
+    .mobile-menu {
+      display: flex;
     }
-    .web-menu{
-        display: none;
+    .web-menu {
+      display: none;
     }
-    .logo{
-        font-size: 24px;
+    .logo {
+      font-size: 24px;
     }
-}
+  }

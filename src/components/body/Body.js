@@ -18,9 +18,9 @@ const Body = () => {
       <section id="skills">
         <Skills/>
       </section>
-      <section id="work">
+      {/* <section id="work">
         <Work/>
-      </section>
+      </section> */}
       <section id="contact">
         <Contact/>
       </section>
