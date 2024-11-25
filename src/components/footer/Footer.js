@@ -1,8 +1,10 @@
 import React from "react";
-import './Footer.css';
+import "./Footer.css";
 
 const Footer = () => {
-    return <div className="footer">Made with 🔥 by Udel</div>;
+   return (
+      <div className="footer">Made with 🔥 by Drishya Poudel</div>
+   );
 };
 
 export default Footer;

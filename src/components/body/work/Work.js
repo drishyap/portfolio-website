@@ -1,25 +1,23 @@
-import React from 'react'
-import './Work.css';
-import Seperator from '../../social/seperator/Seperator'
-import { WorkData } from '../../data/Work';
-import WorkCard from './workCard/WorkCard';
+import React from "react";
+import { WorkData } from "../../data/Work";
+import Seperator from "../../social/seperator/Seperator";
+import "./Work.css";
+import WorkCard from "./workCard/WorkCard";
 
 const Work = () => {
-  const data = WorkData;
+   const data = WorkData;
 
-  return (
-    <div className="work">
-      <Seperator/>
-      <label className="section-title">Work</label>
-      <div className="work-list">
-        {data.map((item) => {
-          return(
-            <WorkCard item={item}/>
-          )
-        })}
+   return (
+      <div className="work">
+         <Seperator />
+         <label className="section-title">Work</label>
+         <div className="work-list">
+            {data.map((item) => {
+               return <WorkCard item={item} />;
+            })}
+         </div>
       </div>
-    </div>
-  )
-}
+   );
+};
 
-export default Work
+export default Work;
