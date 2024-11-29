@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
                      rel="noreferrer"
                   >
                      <div className="link-button">
-                        <i className="fi-rr-globe"></i>Demo
+                        <i className="fi-rr-globe"></i>Link
                      </div>
                   </a>
                )}

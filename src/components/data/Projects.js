@@ -9,6 +9,14 @@ export const ProjectsData = [
    },
    {
       id: 2,
+      title: "Restaurant Management Platform (SROT Cloud)",
+      about: "This is a Restaurant Management Platform with POS system integrated.",
+      demo: "https://srotcloud.com/restaurant",
+      github: "https://github.com/drishyap/react_router_application",
+      image: require("../../assets/projects/pos.png"),
+   },
+   {
+      id: 3,
       title: "Media Production Company's Website",
       about: "This is a website for a media production company.",
       demo: "https://hishana.com/",
@@ -16,7 +24,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/22.png"),
    },
    {
-      id: 3,
+      id: 4,
       title: "NBNS Global",
       about: "Website of NBNS(Nepalese Descendants Citizens Association) with role based dashboard login access",
       demo: "https://nbnsglobal.com/",
@@ -24,7 +32,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/33.png"),
    },
    {
-      id: 4,
+      id: 5,
       title: "Weather Application",
       about: "This is a weather application for information about weather of any place.",
       demo: "https://weatherapplicaton.netlify.app/",
@@ -32,7 +40,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/weather2.png"),
    },
    {
-      id: 5,
+      id: 6,
       title: "Notes Application",
       about: "This is a Notes application for taking notes.",
       demo: "https://take-note-app.netlify.app/",

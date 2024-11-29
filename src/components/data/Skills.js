@@ -15,12 +15,20 @@ export const SkillsData = [
             icon: <i class="devicon-javascript-plain colored"></i>,
          },
          {
+            name: "TypeScript",
+            icon: <i class="devicon-typescript-plain colored"></i>,
+         },
+         {
             name: "ReactJS",
             icon: <i class="devicon-react-original colored"></i>,
          },
          {
             name: "NextJS",
             icon: <i class="devicon-nextjs-plain colored"></i>,
+         },
+         {
+            name: "Redux",
+            icon: <i class="devicon-redux-original colored"></i>,
          },
 
          {
@@ -43,6 +51,14 @@ export const SkillsData = [
          {
             name: "Git",
             icon: <i class="devicon-git-plain colored"></i>,
+         },
+         {
+            name: "Jest",
+            icon: <i class="devicon-jest-plain colored"></i>,
+         },
+         {
+            name: "Figma",
+            icon: <i class="devicon-figma-plain colored"></i>,
          },
       ],
    },
