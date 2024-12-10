@@ -4,7 +4,7 @@ import "./WorkCard.css";
 
 const WorkCard = ({ item }) => {
    const { companyLogo, company, dateJoining, dateEnd, work } = item;
-   const startDate = "2021-09-21"; // Start date in YYYY-MM-DD format
+   const startDate = item?.dateJoining; // Start date in YYYY-MM-DD format
    const today = moment(); // Today's date
 
    // Calculate the difference in years and months
@@ -13,6 +13,8 @@ const WorkCard = ({ item }) => {
       moment(startDate).add(years, "years"),
       "months"
    );
+
+   console.log({ years });
    return (
       <div className="work-card">
          {/* <img src={companyLogo} className="work-logo" alt="" /> */}
@@ -21,7 +23,8 @@ const WorkCard = ({ item }) => {
             <div className="work-dates">
                <label>{dateJoining}</label> -{" "}
                <label>
-                  {dateEnd} ({years} Years and {months} Months)
+                  {dateEnd}({years !== 0 && `${years} Years and `}
+                  {months} Months)
                </label>
             </div>
             <div className="work-desc">
