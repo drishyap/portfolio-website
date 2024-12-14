@@ -34,5 +34,6 @@
 @media only screen and (max-width: 720px) {
    .work-card {
       width: 100%;
+      display: block;
    }
 }
