@@ -17,11 +17,11 @@ export const ProjectsData = [
    },
    {
       id: 3,
-      title: "Media Production Company's Website",
-      about: "This is a website for a media production company.",
-      demo: "https://hishana.com/",
+      title: "SUNDOWN By Karma - Restaurant Website",
+      about: "Website of SUNDOWN By Karma (Restaurant) and dashboard with CMS functionality",
+      demo: "https://sundownbykarma.com/",
       github: "https://github.com/drishyap/react_router_application",
-      image: require("../../assets/projects/22.png"),
+      image: require("../../assets/projects/sun.png"),
    },
    {
       id: 4,
@@ -33,6 +33,14 @@ export const ProjectsData = [
    },
    {
       id: 5,
+      title: "Media Production Company's Website",
+      about: "This is a website for a media production company.",
+      demo: "https://hishana.com/",
+      github: "https://github.com/drishyap/react_router_application",
+      image: require("../../assets/projects/22.png"),
+   },
+   {
+      id: 6,
       title: "Weather Application",
       about: "This is a weather application for information about weather of any place.",
       demo: "https://weatherapplicaton.netlify.app/",
@@ -40,7 +48,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/weather2.png"),
    },
    {
-      id: 6,
+      id: 7,
       title: "Notes Application",
       about: "This is a Notes application for taking notes.",
       demo: "https://take-note-app.netlify.app/",
