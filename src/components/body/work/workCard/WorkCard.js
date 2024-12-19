@@ -21,11 +21,11 @@ const WorkCard = ({ item }) => {
          <div className="work-info">
             <label className="company-name">{company}</label>
             <div className="work-dates">
-               <label>{dateJoining}</label> -{" "}
+               {/* <label>{dateJoining}</label> -{" "}
                <label>
                   {dateEnd}({years !== 0 && `${years} Years and `}
                   {months} Months)
-               </label>
+               </label> */}
             </div>
             <div className="work-desc">
                <p>{work}</p>
