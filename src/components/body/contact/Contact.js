@@ -16,7 +16,7 @@ const Contact = () => {
                </p>
                <Social />
             </div>
-            {/* <div className="download">
+            <div className="download">
                <a
                   download
                   href={require("../../../assets/Drishya_Poudel_CV.pdf")}
@@ -24,7 +24,7 @@ const Contact = () => {
                   <i className="fi-rr-cloud-download download-icon"></i>
                   Download Resume
                </a>
-            </div> */}
+            </div>
          </div>
       </div>
    );
