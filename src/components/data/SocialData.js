@@ -14,11 +14,11 @@ export const SocialData = [
       link: "https://twitter.com/drishaypoudel",
       icon: require("../../assets/icons/twitter.png"),
    },
-   // {
-   //     platform: 'Linkedin',
-   //     link: 'https://www.linkedin.com/in/drishyapoudel/',
-   //     icon: require('../../assets/icons/linkedin.png')
-   // },
+   {
+      platform: "Linkedin",
+      link: "https://www.linkedin.com/in/drishyapoudel/",
+      icon: require("../../assets/icons/linkedin.png"),
+   },
    {
       platform: "github",
       link: "https://github.com/drishyap",
