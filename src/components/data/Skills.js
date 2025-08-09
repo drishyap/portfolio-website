@@ -23,14 +23,17 @@ export const SkillsData = [
             icon: <i class="devicon-react-original colored"></i>,
          },
          {
-            name: "NextJS",
+            name: "Next.JS",
             icon: <i class="devicon-nextjs-plain colored"></i>,
          },
          {
             name: "Redux",
             icon: <i class="devicon-redux-original colored"></i>,
          },
-
+         {
+            name: "Tailwind",
+            icon: <i class="devicon-tailwindcss-plain colored"></i>,
+         },
          {
             name: "MUI",
             icon: <i class="devicon-materialui-plain colored"></i>,

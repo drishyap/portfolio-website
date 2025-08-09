@@ -1,7 +1,7 @@
 export const ProjectsData = [
    {
       id: 1,
-      title: "Consultency Web Application",
+      title: "RB Abroads - Consultency Web Application",
       about: "This is a website for a education consultancy with role based dashboard login access.",
       demo: "https://rbabroads.com/",
       github: "https://github.com/drishyap/react_router_application",
@@ -9,14 +9,30 @@ export const ProjectsData = [
    },
    {
       id: 2,
-      title: "Restaurant Management Platform (SROT Cloud)",
+      title: "Skulix - School Management System",
+      about: "A school management system designed to streamline and enhance educational administration.",
+      demo: "https://skulix.com/",
+      github: "https://github.com/drishyap/react_router_application",
+      image: require("../../assets/projects/skulix.png"),
+   },
+   {
+      id: 3,
+      title: "Diamond Threading",
+      about: "An e-commerce website for a threading salon with admin dashboard and store based POS system.",
+      demo: "https://diamondthreading.com/",
+      github: "https://github.com/drishyap/react_router_application",
+      image: require("../../assets/projects/diamond.png"),
+   },
+   {
+      id: 4,
+      title: "Restaurant Management Platform (Finora Cloud)",
       about: "This is a Restaurant Management Platform with POS system integrated.",
-      demo: "https://srotcloud.com/restaurant",
+      demo: "https://finoracloud.com/restaurant",
       github: "https://github.com/drishyap/react_router_application",
       image: require("../../assets/projects/pos.png"),
    },
    {
-      id: 3,
+      id: 5,
       title: "SUNDOWN By Karma - Restaurant Website",
       about: "Website of SUNDOWN By Karma (Restaurant) and dashboard with CMS functionality",
       demo: "https://sundownbykarma.com/",
@@ -24,7 +40,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/sun.png"),
    },
    {
-      id: 4,
+      id: 6,
       title: "NBNS Global",
       about: "Website of NBNS(Nepalese Descendants Citizens Association) with role based dashboard login access",
       demo: "https://nbnsglobal.com/",
@@ -32,7 +48,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/33.png"),
    },
    {
-      id: 5,
+      id: 6,
       title: "Media Production Company's Website",
       about: "This is a website for a media production company.",
       demo: "https://hishana.com/",
@@ -40,7 +56,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/22.png"),
    },
    {
-      id: 6,
+      id: 8,
       title: "Weather Application",
       about: "This is a weather application for information about weather of any place.",
       demo: "https://weatherapplicaton.netlify.app/",
@@ -48,7 +64,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/weather2.png"),
    },
    {
-      id: 7,
+      id: 9,
       title: "Notes Application",
       about: "This is a Notes application for taking notes.",
       demo: "https://take-note-app.netlify.app/",

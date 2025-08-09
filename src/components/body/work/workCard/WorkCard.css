@@ -1,6 +1,6 @@
 .work-card {
    padding: 8px;
-   width: 45%;
+   width: 100%;
    margin-top: 16px;
    display: flex;
    justify-content: space-between;
@@ -14,9 +14,9 @@
 
 .work-info {
    display: flex;
-   align-items: flex-start;
+   align-items: flex-end;
    flex-direction: column;
-   width: 60%;
+   width: 100%;
 }
 .company-name {
    font-size: 18px;
@@ -25,10 +25,11 @@
 .work-dates {
    color: gray;
    margin-bottom: 10px;
+   text-align: right;
 }
 
 .work-desc {
-   text-align: left;
+   text-align: right;
 }
 
 @media only screen and (max-width: 720px) {

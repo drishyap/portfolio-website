@@ -1,16 +1,20 @@
 import moment from "moment";
-import React from "react";
 import "./WorkCard.css";
 
 const WorkCard = ({ item }) => {
    const { companyLogo, company, dateJoining, dateEnd, work } = item;
-   const startDate = item?.dateJoining; // Start date in YYYY-MM-DD format
+
+   const startDate = item?.dateJoining; // Start date in DD-MM-YYYY format
    const today = moment(); // Today's date
 
+   console.log({ today });
+
+   // Parse the start date with the correct format
+   const startMoment = moment(startDate, "DD-MM-YYYY");
    // Calculate the difference in years and months
-   const years = today.diff(moment(startDate), "years");
+   const years = today.diff(startMoment, "years");
    const months = today.diff(
-      moment(startDate).add(years, "years"),
+      startMoment.clone().add(years, "years"),
       "months"
    );
 
