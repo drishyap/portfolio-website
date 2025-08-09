@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css";
 
 const About = () => {
@@ -11,7 +10,7 @@ const About = () => {
                <br />
                <span style={{ fontWeight: "700", fontSize: "30px" }}>
                   {" "}
-                  Front-End Develper
+                  Front-End Developer
                </span>{" "}
                and
                <br />I love experimenting with the web.
