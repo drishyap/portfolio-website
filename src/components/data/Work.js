@@ -21,6 +21,6 @@ export const WorkData = [
       dateJoining: "21-09-2022",
       dateEnd: "27-12-2024",
       companyLogo: require("../../assets/work/nepdroid.png"),
-      work: "Working as a Front-End Web Developer(React JS, NEXT.JS)",
+      work: "Worked as a Front-End Web Developer(React JS, NEXT.JS)",
    },
 ];
