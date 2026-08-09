@@ -21,6 +21,12 @@ function Header() {
          document.body.style.overflow = "";
       };
    }, [isOpen]);
+   useEffect(() => {
+      // Close sidebar on window resize to avoid inconsistent states
+      const handleResize = () => setIsOpen(false);
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+   }, []);
    return (
       <div className="header">
          <div onClick={handleLogoClick} className="logo">
