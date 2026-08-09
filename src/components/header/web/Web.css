@@ -1,45 +1,55 @@
-.web{
-    display: flex;
-    flex: 1;
-    align-items: center;
+.web {
+   display: flex;
+   flex: 1;
+   align-items: center;
 }
 
-.scroll-web{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    /* position: fixed; */
-    background-color: #fff;
-    height: 50px;
-    transition: 0.8s;
+.scroll-web {
+   display: flex;
+   flex: 1;
+   align-items: center;
+   /* position: fixed; */
+   background-color: #fff;
+   height: 50px;
+   transition: 0.8s;
 }
 
-.scroll-web .web-option{
-    font-size: 10px;
-    margin-right: 50px;
-    font-weight: 600;
+.scroll-web .web-option {
+   font-size: 10px;
+   margin-right: 50px;
+   font-weight: 600;
 }
 
-.web-option{
-    font-size: 20px;
-    margin-right: 50px;
-    font-weight: 600;
+.web-option {
+   font-size: 20px;
+   margin-right: 50px;
+   font-weight: 600;
 }
 
-.web-option a{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
+.web-option a {
+   text-decoration: none;
+   color: black;
+   display: flex;
+   align-items: center;
 }
 
-.option-icon{
-    display: flex;
-    align-items: center;
-    margin-right: 5px;
-    font-size: 25px;
+.option-icon {
+   display: flex;
+   align-items: center;
+   margin-right: 5px;
+   font-size: 25px;
 }
 
-.web-option:last-child{
-    margin-right: 0px;
+.web-option:last-child {
+   margin-right: 0px;
+}
+
+@media only screen and (max-width: 1250px) {
+   .web-option {
+      font-size: 18px;
+   }
+
+   .option-icon {
+      font-size: 22px;
+   }
 }
