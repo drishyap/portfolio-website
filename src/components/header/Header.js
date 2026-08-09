@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 import Mobile from "./mobile/Mobile";
 import Web from "./web/Web";
@@ -8,9 +8,19 @@ function Header() {
    const handleLogoClick = () => {
       window.scrollTo(0, 0);
    };
-   window.onscroll = function () {
-      setIsOpen(false);
-   };
+   useEffect(() => {
+      const handleScroll = () => setIsOpen(false);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
+
+   useEffect(() => {
+      // Lock body scroll when sidebar is open
+      document.body.style.overflow = isOpen ? "hidden" : "";
+      return () => {
+         document.body.style.overflow = "";
+      };
+   }, [isOpen]);
    return (
       <div className="header">
          <div onClick={handleLogoClick} className="logo">
@@ -25,9 +35,14 @@ function Header() {
                <div onClick={() => setIsOpen(!isOpen)}>
                   <i class="fi-rr-apps menu-icon"></i>
                </div>
-               {isOpen && (
+               <>
+                  <div
+                     className={`mobile-overlay ${isOpen ? "open" : ""}`}
+                     onClick={() => setIsOpen(false)}
+                     aria-hidden="true"
+                  />
                   <Mobile isOpen={isOpen} setIsOpen={setIsOpen} />
-               )}
+               </>
             </div>
          </div>
       </div>
