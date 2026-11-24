@@ -6,8 +6,9 @@
 
 .about-top {
    padding: 48px 0 82px;
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+   column-gap: 64px;
    align-items: center;
 }
 
@@ -32,9 +33,11 @@
 .button-quiet { color: var(--ink); border: 1px solid var(--line); background: white; }
 .hero-note { margin: 38px 0 0; color: var(--muted); font: 12px 'Outfit', sans-serif; }
 .about-img { position: relative; }
+.about-img { display: flex; justify-content: flex-end; }
 
 @media only screen and (max-width: 720px) {
    .about-top {
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
