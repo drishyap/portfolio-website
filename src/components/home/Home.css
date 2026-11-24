@@ -5,7 +5,7 @@ html {
 .home {
    display: flex;
    flex-direction: column;
-   width: 70%;
+   width: min(1120px, calc(100% - 48px));
    margin: auto;
    position: relative;
 }
@@ -23,9 +23,9 @@ html {
    bottom: 50px;
    font-size: 12px;
    z-index: 1000;
-   color: #a0a9a5;
+   color: var(--muted);
    cursor: pointer;
-   transform: rotate(270deg);
+   transform: rotate(270deg) translateY(-8px);
    transition: 0.2s ease-in-out;
    opacity: 0;
    display: flex;
@@ -40,11 +40,11 @@ html {
 .scrollToTopBtnVisible {
    position: fixed;
    right: 25px;
-   bottom: 100px;
+   bottom: 94px;
    opacity: 1;
    font-size: 12px;
    z-index: 100;
-   color: #a0a9a5;
+   color: var(--muted);
    cursor: pointer;
    transform: rotate(270deg);
    transition: 0.2s ease-in-out;
@@ -59,12 +59,12 @@ html {
 
 @media only screen and (max-width: 1024px) {
    .home {
-      width: 90%;
+      width: min(100% - 40px, 760px);
    }
 }
 
 @media only screen and (max-width: 512px) {
    .home {
-      width: 100%;
+      width: calc(100% - 32px);
    }
 }

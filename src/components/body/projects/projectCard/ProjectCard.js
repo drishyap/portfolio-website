@@ -1,12 +1,13 @@
 import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 import "./ProjectCard.css";
 
 const ProjectCard = ({ project }) => {
-   const { image, id, demo, about, title, github } = project;
+   const { image, demo, about, title } = project;
    return (
-      <div className="project-card">
+      <article className="project-card">
          <div className="project-info">
-            <label className="project-title">{title}</label>
+            <h3 className="project-title">{title}</h3>
             <div className="project-links">
                {demo && (
                   <a
@@ -16,28 +17,16 @@ const ProjectCard = ({ project }) => {
                      rel="noreferrer"
                   >
                      <div className="link-button">
-                        <i className="fi-rr-globe"></i>Link
+                        Visit site <FiArrowUpRight />
                      </div>
                   </a>
                )}
-               {/* {github && (
-                        <a
-                            href={github}
-                            className="project-link"
-                            target="_blank"
-                        >
-                            <div className="link-button">
-                                <i class="devicon-github-original colored"></i>
-                                Github
-                            </div>
-                        </a>
-                    )} */}
             </div>
             <p>{about}</p>
          </div>
 
-         <img src={image} alt="" className="project-photo" />
-      </div>
+         <a href={demo} target="_blank" rel="noreferrer" className="project-visual"><img src={image} alt={`${title} website preview`} className="project-photo" /></a>
+      </article>
    );
 };
 

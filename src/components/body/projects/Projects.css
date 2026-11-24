@@ -1,3 +1,4 @@
-.projects{
-    flex: 1;
-}
+.projects { flex: 1; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 18px; }
+.section-heading p { margin: 0; color: var(--muted); font-size: 14px; }
+@media (max-width: 600px) { .section-heading { align-items: start; flex-direction: column; gap: 8px; } }

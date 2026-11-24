@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
    return (
-      <div className="footer">Made with 🔥 by Drishya Poudel</div>
+      <div className="footer">© {new Date().getFullYear()} Drishya Poudel · Designed and built with care</div>
    );
 };
 

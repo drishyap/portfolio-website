@@ -29,8 +29,8 @@ function Header() {
    }, []);
    return (
       <div className="header">
-         <div onClick={handleLogoClick} className="logo">
-            Drishya Poudel
+         <div onClick={handleLogoClick} className="logo" role="button" tabIndex="0">
+            <span className="logo-mark">DP</span><span>Drishya Poudel</span>
          </div>
          <div className="menu">
             <div className="web-menu">
@@ -39,7 +39,7 @@ function Header() {
 
             <div className="mobile-menu">
                <div onClick={() => setIsOpen(!isOpen)}>
-                  <i class="fi-rr-apps menu-icon"></i>
+                  <i className="fi-rr-apps menu-icon"></i>
                </div>
                <>
                   <div

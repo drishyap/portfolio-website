@@ -2,6 +2,7 @@ import React from "react";
 import Seperator from "../../social/seperator/Seperator";
 import Social from "../../social/Social";
 import "./Contact.css";
+import { FiDownload } from "react-icons/fi";
 
 const Contact = () => {
    return (
@@ -21,7 +22,7 @@ const Contact = () => {
                   download
                   href={require("../../../assets/Drishya_Poudel_CV.pdf")}
                >
-                  <i className="fi-rr-cloud-download download-icon"></i>
+                  <FiDownload className="download-icon" />
                   Download Resume
                </a>
             </div>

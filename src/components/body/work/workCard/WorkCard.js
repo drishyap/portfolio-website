@@ -2,12 +2,10 @@ import moment from "moment";
 import "./WorkCard.css";
 
 const WorkCard = ({ item }) => {
-   const { companyLogo, company, dateJoining, dateEnd, work } = item;
+   const { company, dateJoining, dateEnd, work } = item;
 
    const startDate = item?.dateJoining; // Start date in DD-MM-YYYY format
    const today = moment(); // Today's date
-
-   console.log({ today });
 
    // Parse the start date with the correct format
    const startMoment = moment(startDate, "DD-MM-YYYY");
@@ -18,12 +16,11 @@ const WorkCard = ({ item }) => {
       "months"
    );
 
-   console.log({ years });
    return (
-      <div className="work-card">
+      <article className="work-card">
          {/* <img src={companyLogo} className="work-logo" alt="" /> */}
          <div className="work-info">
-            <label className="company-name">{company}</label>
+            <div><h3 className="company-name">{company}</h3><p className="designation">{item.designation}</p></div>
             <div className="work-dates">
                <label>{dateJoining}</label> -{" "}
                <label>
@@ -35,7 +32,7 @@ const WorkCard = ({ item }) => {
                <p>{work}</p>
             </div>
          </div>
-      </div>
+      </article>
    );
 };
 

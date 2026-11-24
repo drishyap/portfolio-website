@@ -10,10 +10,10 @@ const Work = () => {
    return (
       <div className="work">
          <Seperator />
-         <label className="section-title">Work</label>
+         <div className="section-heading"><label className="section-title">Experience</label><p>Building on the web since 2022.</p></div>
          <div className="work-list">
             {data.map((item) => {
-               return <WorkCard item={item} />;
+               return <WorkCard key={item.company} item={item} />;
             })}
          </div>
       </div>

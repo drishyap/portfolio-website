@@ -1,74 +1,12 @@
-.project-card{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    margin: 16px 0px;
-    padding: 8px 0px;
-}
-
-.project-photo{
-    width: 40%;
-    transform: scale(1);
-    object-fit: cover;
-    transition: 0.5s ease-in-out;  
-    cursor: pointer;  
-}
-
-.project-photo:hover {
-    transform: scale(1.02);
-    background-position: center;
-}
-
-.project-info{
-    margin-right: 24px;
-}
-
-.project-title{
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.project-links a{
-    text-decoration: none;;
-    color: black;
-}
-
-.project-links{
-    margin-top: 6px;
-    display: flex;
-}
-
-.link-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(38, 255, 183);
-    width: max-content;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
-
-.link-button i{
-    display: flex;
-    align-items: center;
-    margin-right: 4px;
-}
-
-@media only screen and (max-width: 720px){
-    .project-photo{
-        width: 70%;
-    }
-
-    .project-card{
-        flex-direction: column-reverse;
-    }
-
-    .project-info{
-        margin-left: 0;
-        margin-top: 12px;
-    }
-}
+.project-card { display: flex; justify-content: space-between; align-items: center; gap: 60px; min-height: 320px; margin: 0; padding: 42px 24px; border-top: 1px solid var(--line); }
+.project-info { flex: 1; max-width: 480px; }
+.project-title { margin: 0; font-size: clamp(23px, 3vw, 34px); line-height: 1.1; letter-spacing: -.05em; font-weight: 700; }
+.project-info p { margin: 0; color: var(--muted); line-height: 1.65; font-size: 15px; }
+.project-links { margin-top: 18px; display: flex; }
+.project-links a { text-decoration: none; color: var(--ink); }
+.link-button { display: flex; justify-content: center; align-items: center; gap: 7px; background-color: var(--mint); width: max-content; padding: 8px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; margin: 0 8px 10px 0; }
+.project-github .link-button { background: #f1f3f7; }
+.project-visual { display: block; width: 250px; height: 250px; flex: 0 0 250px; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #f0f2f7; }
+.project-photo { width: 100%; height: 100%; transform: scale(1.01); object-fit: cover; transition: transform .5s ease-in-out; cursor: pointer; }
+.project-photo:hover { transform: scale(1.055); }
+@media only screen and (max-width: 720px) { .project-card { flex-direction: column-reverse; align-items: start; gap: 22px; padding: 32px 0; } .project-visual { width: 100%; height: auto; aspect-ratio: 1; flex-basis: auto; } }
