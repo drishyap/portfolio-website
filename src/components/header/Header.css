@@ -1,10 +1,29 @@
 .header {
    display: flex;
    justify-content: space-between;
-   flex: 1;
-   padding: 28px 0 18px;
-   position: relative;
+   padding: 13px 16px;
+   position: fixed;
+   top: 0;
+   left: 50%;
+   width: min(1120px, calc(100% - 48px));
+   z-index: 100;
    align-items: center;
+   transform: translateX(-50%);
+   min-height: 58px;
+   border: 1px solid transparent;
+   border-radius: 16px;
+   background: rgba(251, 252, 254, 0);
+   box-shadow: 0 10px 28px rgba(22, 32, 50, 0);
+   backdrop-filter: blur(0);
+   -webkit-backdrop-filter: blur(0);
+   transition: background-color .32s ease, box-shadow .32s ease, border-color .32s ease, backdrop-filter .32s ease;
+}
+.header-scrolled {
+   background: rgba(251, 252, 254, .76);
+   border: 1px solid rgba(230, 233, 240, .9);
+   box-shadow: 0 10px 28px rgba(22, 32, 50, .07);
+   backdrop-filter: blur(14px) saturate(1.25);
+   -webkit-backdrop-filter: blur(14px) saturate(1.25);
 }
 .menu {
    display: flex;
@@ -23,15 +42,12 @@
 }
 .logo {
    display: flex;
-
-   gap: 10px;
    font-size: 17px;
    color: var(--ink);
    font-weight: 700;
    letter-spacing: -0.4px;
    cursor: pointer;
 }
-.logo-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; color: white; background: var(--ink); font-family: 'Outfit', sans-serif; font-size: 12px; letter-spacing: -1px; }
 @media only screen and (max-width: 1250px) {
    .logo {
       font-size: 17px;
@@ -47,4 +63,10 @@
    .logo {
       font-size: 16px;
    }
+}
+@media only screen and (max-width: 1024px) {
+   .header { width: min(100% - 40px, 760px); }
+}
+@media only screen and (max-width: 512px) {
+   .header { width: calc(100% - 32px); padding: 12px 8px; min-height: 52px; border-radius: 12px; }
 }

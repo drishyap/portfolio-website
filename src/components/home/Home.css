@@ -8,6 +8,7 @@ html {
    width: min(1120px, calc(100% - 48px));
    margin: auto;
    position: relative;
+   padding-top: 72px;
 }
 
 .topBtn {
@@ -66,5 +67,6 @@ html {
 @media only screen and (max-width: 512px) {
    .home {
       width: calc(100% - 32px);
+      padding-top: 64px;
    }
 }

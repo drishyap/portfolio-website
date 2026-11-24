@@ -5,12 +5,17 @@ import Web from "./web/Web";
 
 function Header() {
    const [isOpen, setIsOpen] = useState(false);
+   const [isScrolled, setIsScrolled] = useState(false);
    const handleLogoClick = () => {
       window.scrollTo(0, 0);
    };
    useEffect(() => {
-      const handleScroll = () => setIsOpen(false);
+      const handleScroll = () => {
+         setIsOpen(false);
+         setIsScrolled(window.scrollY > 24);
+      };
       window.addEventListener("scroll", handleScroll);
+      handleScroll();
       return () => window.removeEventListener("scroll", handleScroll);
    }, []);
 
@@ -28,9 +33,9 @@ function Header() {
       return () => window.removeEventListener("resize", handleResize);
    }, []);
    return (
-      <div className="header">
+      <header className={`header ${isScrolled ? "header-scrolled" : ""}`}>
          <div onClick={handleLogoClick} className="logo" role="button" tabIndex="0">
-            <span className="logo-mark">DP</span><span>Drishya Poudel</span>
+            Drishya Poudel
          </div>
          <div className="menu">
             <div className="web-menu">
@@ -51,7 +56,7 @@ function Header() {
                </>
             </div>
          </div>
-      </div>
+      </header>
    );
 }
 
