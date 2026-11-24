@@ -12,7 +12,7 @@ const Projects = () => {
          <Seperator />
          <div className="section-heading"><h2 className="section-title">Production platforms</h2><p>Real-world production systems.</p></div>
          <div>
-            {data.filter((project) => ![8, 9].includes(project.id)).map((project) => {
+            {data.filter((project) => !project.hidden).map((project) => {
                return <ProjectCard key={`${project.id}-${project.title}`} project={project} />;
             })}
          </div>

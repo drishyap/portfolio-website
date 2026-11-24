@@ -11,5 +11,5 @@
 * { box-sizing: border-box; }
 html { background: var(--paper); }
 body { margin: 0; color: var(--ink); background: var(--paper); }
-body, button, a { font-family: 'DM Sans', sans-serif; }
+body, button, a { font-family: 'Outfit', sans-serif; }
 ::selection { background: #c8c9ff; color: var(--ink); }

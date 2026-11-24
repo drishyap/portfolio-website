@@ -20,8 +20,8 @@
 .about-info {
    max-width: 640px;
 }
-.eyebrow { margin: 0 0 22px; color: var(--muted); font: 500 11px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
-.about h1 { margin: 0; font-size: clamp(46px, 6.1vw, 76px); line-height: 1; letter-spacing: -.07em; font-weight: 700; }
+.eyebrow { margin: 0 0 22px; color: var(--muted); font: 500 11px 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: .08em; }
+.about h1 { margin: 0; font-size: clamp(46px, 6.1vw, 76px); line-height: 1; letter-spacing: -.07em; font-weight: 600; }
 .about h1 em { color: var(--accent); font-style: normal; }
 .hero-copy { max-width: 520px; margin: 26px 0 0; color: var(--muted); font-size: 18px; line-height: 1.65; }
 .hero-actions { display: flex; gap: 12px; margin-top: 32px; }
@@ -30,7 +30,7 @@
 .button-primary { color: #fff; background: var(--ink); box-shadow: 0 9px 18px rgba(22, 32, 50, .16); }
 .button-primary svg { font-size: 18px; }
 .button-quiet { color: var(--ink); border: 1px solid var(--line); background: white; }
-.hero-note { margin: 38px 0 0; color: var(--muted); font: 12px 'DM Mono', monospace; }
+.hero-note { margin: 38px 0 0; color: var(--muted); font: 12px 'Outfit', sans-serif; }
 .about-img { position: relative; }
 
 @media only screen and (max-width: 720px) {

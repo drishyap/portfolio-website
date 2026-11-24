@@ -25,6 +25,13 @@ export const ProjectsData = [
    },
    {
       id: 4,
+      title: "Butler Benchmarking",
+      about: "A secure online assessment platform for luxury hotels, with dashboards for individual, team, regional, and global performance.",
+      demo: "https://butlerbenchmarking.com/",
+      image: require("../../assets/projects/bb.png"),
+   },
+   {
+      id: 5,
       title: "Restaurant Management Platform (Finora Cloud)",
       about: "This is a Restaurant Management Platform with POS system integrated.",
       demo: "https://finoracloud.com/restaurant",
@@ -32,7 +39,14 @@ export const ProjectsData = [
       image: require("../../assets/projects/pos.png"),
    },
    {
-      id: 5,
+      id: 6,
+      title: "Hishana Consultancy",
+      about: "A study-abroad consultancy website that helps students explore international education, universities, and visa guidance.",
+      demo: "https://hishanaconsultancy.com/",
+      image: require("../../assets/projects/hishana_cons.png"),
+   },
+   {
+      id: 7,
       title: "SUNDOWN By Karma - Restaurant Website",
       about: "Website of SUNDOWN By Karma (Restaurant) and dashboard with CMS functionality",
       demo: "https://sundownbykarma.com/",
@@ -40,7 +54,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/sun.png"),
    },
    {
-      id: 6,
+      id: 8,
       title: "NBNS Global",
       about: "Website of NBNS(Nepalese Descendants Citizens Association) with role based dashboard login access",
       demo: "https://nbnsglobal.com/",
@@ -48,7 +62,7 @@ export const ProjectsData = [
       image: require("../../assets/projects/33.png"),
    },
    {
-      id: 6,
+      id: 9,
       title: "Media Production Company's Website",
       about: "This is a website for a media production company.",
       demo: "https://hishana.com/",
@@ -62,6 +76,7 @@ export const ProjectsData = [
       demo: "https://weatherapplicaton.netlify.app/",
       github: "https://github.com/drishyap/weather_application",
       image: require("../../assets/projects/weather2.png"),
+      hidden: true,
    },
    {
       id: 9,
@@ -70,5 +85,6 @@ export const ProjectsData = [
       demo: "https://take-note-app.netlify.app/",
       github: "https://github.com/drishyap/weather_application",
       image: require("../../assets/projects/note.png"),
+      hidden: true,
    },
 ];
