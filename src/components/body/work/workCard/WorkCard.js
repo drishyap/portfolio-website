@@ -4,17 +4,19 @@ import "./WorkCard.css";
 const WorkCard = ({ item }) => {
    const { company, dateJoining, dateEnd, work } = item;
 
-   const startDate = item?.dateJoining; // Start date in DD-MM-YYYY format
-   const today = moment(); // Today's date
-
-   // Parse the start date with the correct format
-   const startMoment = moment(startDate, "DD-MM-YYYY");
-   // Calculate the difference in years and months
-   const years = today.diff(startMoment, "years");
-   const months = today.diff(
+   const startMoment = moment(dateJoining, "DD-MM-YYYY", true);
+   const endMoment = dateEnd === "Present"
+      ? moment()
+      : moment(dateEnd, "DD-MM-YYYY", true);
+   const years = endMoment.diff(startMoment, "years");
+   const months = endMoment.diff(
       startMoment.clone().add(years, "years"),
       "months"
    );
+   const duration = [
+      years && `${years} ${years === 1 ? "year" : "years"}`,
+      months && `${months} ${months === 1 ? "month" : "months"}`,
+   ].filter(Boolean).join(" ") || "Less than a month";
 
    return (
       <article className="work-card">
@@ -22,11 +24,8 @@ const WorkCard = ({ item }) => {
          <div className="work-info">
             <div><h3 className="company-name">{company}</h3><p className="designation">{item.designation}</p></div>
             <div className="work-dates">
-               <label>{dateJoining}</label> -{" "}
-               <label>
-                  {dateEnd}({years !== 0 && `${years} Years and `}
-                  {months} Months)
-               </label>
+               <label>{dateJoining}</label> — <label>{dateEnd}</label>
+               <span className="work-duration"> · {duration}</span>
             </div>
             <div className="work-desc">
                <p>{work}</p>
